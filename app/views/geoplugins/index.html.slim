@@ -4,7 +4,7 @@
 .location
 
 javascript:
-  $.getJSON("http://jsonip.appspot.com?callback=?", function(data, textStatus, xhr) {   // main callback function
+  $.getJSON("http://myexternalip.com/json?", function(data, textStatus, xhr) {   // main callback function
     if(xhr.status == 500 || xhr.status == 404 || xhr.status == 503) {
      $.get('/geoplugins/locate');
     } else {
