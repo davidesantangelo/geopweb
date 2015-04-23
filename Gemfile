@@ -27,7 +27,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 # font-awesome
 gem 'font-awesome-rails'
 # geoplugin
-gem 'geoplugin', '~> 0.3.0'
+gem 'geoplugin', '~> 0.3.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
