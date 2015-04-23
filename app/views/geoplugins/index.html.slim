@@ -4,4 +4,7 @@
 .location
 
 javascript:
-  $.get('/geoplugins/locate');
+	$.getJSON("http://jsonip.appspot.com?callback=?",
+    function(data){
+      $.get('/geoplugins/locate?ip= ' + data.ip);
+  });

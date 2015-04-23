@@ -5,6 +5,6 @@ class GeopluginsController < ApplicationController
   end
 
   def locate
-    @location = params[:ip] ? Geoplugin.new(params[:ip]) : Geoplugin.me
+    @location = params[:ip] ? Geoplugin.new(params[:ip].strip) : Geoplugin.me
   end
 end
