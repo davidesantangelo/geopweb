@@ -4,5 +4,10 @@
 .location
 
 javascript:
-  $.get('/geoplugins/locate');
-
+  $.getJSON("http://jsonip.appspot.com?callback=?", function(data, textStatus, xhr) {   // main callback function
+    if(xhr.status == 500 || xhr.status == 404 || xhr.status == 503) {
+     $.get('/geoplugins/locate');
+    } else {
+      $.get('/geoplugins/locate?ip= ' + data.ip);
+    }
+  });
