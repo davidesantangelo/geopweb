@@ -29,7 +29,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 # font-awesome
 gem 'font-awesome-rails'
 # geoplugin
-gem 'geoplugin'
+gem 'geoplugin', '~> 0.3.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,3 +51,11 @@ group :development, :test do
   gem 'spring'
 end
 
+
+group :production do
+  gem 'pg'
+end
+
+group :staging, :production do
+  gem 'rails_12factor'
+end
