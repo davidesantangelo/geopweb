@@ -7,7 +7,7 @@ You can see live demo at this url: https://geopweb.herokuapp.com
 # getting started
 
  git clone https://github.com/davidesantangelo/geopweb.git<br />
- cd geopweb & bundle install<br />
+ cd geopweb && bundle install<br />
  rails s 
 
 # try it
