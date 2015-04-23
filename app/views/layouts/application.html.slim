@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+  	title Davide Santangelo - Geoplugin Demo Web
+  	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true 
+  	= csrf_meta_tags 
+
+  	link href="http://fonts.googleapis.com/css?family=Lato:100,300,700" rel="stylesheet" type="text/css"
+  	link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css"
+  	meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    
+    meta name="description" content="Davide Santangelo — Geoplugin Demo Web"
+    meta name="keywords" content="davide santangelo geoplugin rails ruby"
+
+    /![if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]
+      
+	body
+    .container         
+	    .row
+        .col-md-10.col-md-offset-1.col-sm-8.col-sm-offset-2
+          == yield
+
+  footer class="footer text-center" style="display:none"
+    | Just a little demo of the 
+    a href="https://github.com/davidesantangelo/geoplugin" Geoplugin 
+    | gem
+    br
+    | Made by 
+    a href="http://twitter.com/daviducolo" @daviducolo
+
+    
