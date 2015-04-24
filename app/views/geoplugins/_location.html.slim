@@ -4,83 +4,83 @@ h1 About Your Position
   .panel-body
     .row
       .col-md-4.text-center 
-      	.about
-        	strong Ip:
-        	br
-        	= @location.request
+        .about
+          strong Ip:
+          br
+          = @location.request.blank? ? '-' : @location.request
       .col-md-4.text-center 
-      	.about
-        	strong City:
-        	br 
-        	= @location.city
+        .about
+          strong City:
+          br 
+          = @location.city.blank? ? '-' : @location.city
       .col-md-4.text-center 
-      	.about
-        	strong Region: 
-        	br
-        	= @location.region
+        .about
+          strong Region: 
+          br
+          = @location.region.blank? ? '-' : @location.region
       .col-md-4.text-center 
-      	.about
-        	strong Area Code: 
-        	br
-        	= @location.areacode
+        .about
+          strong Area Code: 
+          br
+          = @location.areacode.blank? ? '-' : @location.areacode
       .col-md-4.text-center 
-      	.about
-        	strong DMA Code: 
-        	br
-        	= @location.dmacode
+        .about
+          strong DMA Code: 
+          br
+          = @location.dmacode.blank? ? '-' : @location.dmacode
       .col-md-4.text-center 
-      	.about
-        	strong Country Code: 
-        	br
-        	= @location.countrycode
+        .about
+          strong Country Code: 
+          br
+          = @location.countrycode.blank? ? '-' : @location.countrycode
       .col-md-4.text-center 
-      	.about
-        	strong Country Name: 
-        	br
-        	= @location.countryname
+        .about
+          strong Country Name: 
+          br
+          = @location.countryname.blank? ? '-' : @location.countryname
       .col-md-4.text-center 
-      	.about
-        	strong Continent Code: 
-        	br
-        	= @location.continentcode
+        .about
+          strong Continent Code: 
+          br
+          = @location.continentcode.blank? ? '-' : @location.continentcode
       .col-md-4.text-center 
-      	.about
-        	strong Latitude: 
-        	br
-        	= @location.latitude
+        .about
+          strong Latitude: 
+          br
+          = @location.latitude.blank? ? '-' : @location.latitude
       .col-md-4.text-center 
-      	.about
-        	strong Longitude: 
-        	br
-        	= @location.longitude
+        .about
+          strong Longitude: 
+          br
+          = @location.longitude.blank? ? '-' : @location.longitude
      	.col-md-4.text-center 
-      	.about
-        	strong Region Code: 
-        	br
-        	= @location.regioncode
+        .about
+          strong Region Code: 
+          br
+          = @location.regioncode.blank? ? '-' : @location.regioncode
       .col-md-4.text-center 
-      	.about
-        	strong Region Name: 
-        	br
-        	= @location.regionname
+        .about
+          strong Region Name: 
+          br
+          = @location.regionname.blank? ? '-' : @location.regionname
       .col-md-4.text-center 
-      	.about
-        	strong Currency Code: 
-        	br
-        	= @location.currencycode
+        .about
+          strong Currency Code: 
+          br
+          = @location.currencycode.blank? ? '-' : @location.currencycode
       .col-md-4.text-center 
-      	.about
-        	strong Currency Symbol: 
-        	br
-        	= @location.currencysymbol
+        .about
+          strong Currency Symbol: 
+          br
+          = @location.currencysymbol.blank? ? '-' : @location.currencysymbol
       .col-md-4.text-center 
-      	.about
-        	strong Currency Symbol UTF8: 
-        	br
-        	= @location.currencysymbol_utf
+        .about
+          strong Currency Symbol UTF8: 
+          br
+          = @location.currencysymbol_utf.blank? ? '-' : @location.currencysymbol_utf
       .col-md-4.text-center 
-      	.about
-        	strong Currency Converter: 
-        	br
-        	= @location.currencyconverter
+        .about
+          strong Currency Converter
+          br
+          = @location.currencyconverter.blank? ? '-' : @location.currencyconverter
       
