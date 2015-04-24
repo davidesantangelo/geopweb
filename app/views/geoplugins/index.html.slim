@@ -4,7 +4,7 @@
 .location
 
 javascript:
-	$.getJSON("http://myexternalip.com/json?", function(data) {
+	$.getJSON("https://myexternalip.com/json?", function(data) {
 	  $.get('/geoplugins/locate?ip= ' + data.ip);
 	})
 	.error(function() { 
